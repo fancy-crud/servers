@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  django:
+    build:
+      context: ./django
+    volumes:
+      - ./django:/usr/share/backend
+    ports:
+      - '9000:9000'
+    tty: true
